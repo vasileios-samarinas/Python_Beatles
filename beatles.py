@@ -34,7 +34,16 @@ print(result)
 def alivemembers(members):
     return [member for member in members if member['death_year'] == None]
 
-result = alivemembers(beatles)
-print(result)
+result1 = alivemembers(beatles)
+print(result1)
+
+
+# 4. Combine the above two functions to return the names of all the members who are alive:
+# Expected result: ['Paul McCartney', 'Ringo Starr']
+
+result2 = alivemembers(beatles)
+final_result = names(result2)
+print(final_result)
+
 
 
